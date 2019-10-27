@@ -8,10 +8,10 @@ public class StringMethods {
 	public static void main(String[] args) {
 		
 		// 1. Create a String variable and initialize it to whatever you want
-
+String yeet = "yeet";
 		// 2. Print the 3rd char of your String to the console.
 		//    HINT: .charAt
-		
+		println("e");
 		// 3. Print the length of your String to the console.
 		//    HINT: .length()
 
