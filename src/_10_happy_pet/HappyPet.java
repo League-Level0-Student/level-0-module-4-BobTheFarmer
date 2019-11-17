@@ -5,10 +5,19 @@ public class HappyPet {
 	
 	// 2. Add the following variable to the next line: static int happinessLevel = 0;
 	// this will be used to store the happiness of your pet
-	
+	static int happinessLevel = 0;
 	public static void main(String[] args) {
 		// 1. Ask the user what kind of pet they want to buy, and store their answer in a variable
-
+		
+		int pet = JOptionPane.showOptionDialog(null, "What pet do you want?", "Stop reading and choose a pet", 0, JOptionPane.INFORMATION_MESSAGE, null,
+				new String[] { "Cat", "Dog", "Hamster", "Fish"}, null);
+		if(pet==0) {
+		JOptionPane.showMessageDialog(null, "Reconsider you life choises");
+		happinessLevel = -10000;
+		}
+		int task = JOptionPane.showOptionDialog(null, "What will you do to make your pet happy?", "Make your pet less deppresed", 0, JOptionPane.INFORMATION_MESSAGE, null,
+				new String[] { "Feed", "Play", "Kill" }, null);
+		}
 		// 7. REPEAT steps 3 - 6 enough times to make your pet happy!
 		
 			// 3. Use showOptionDialog to ask the user what they want to do to make their pet happy
@@ -21,10 +30,9 @@ public class HappyPet {
 
 			// 6. If you determine the happiness level is large enough, tell the
 			//    user that he loves his pet and use break; to exit for loop.
-
+			
 	}
 
 	// 4. Create methods to handle each of your user selections.
 	//    Each method should create a pop-up with the pet's response (eg. cat might purr when pet), 
 	//    and INCREMENT the pet's happiness Level.
-}
