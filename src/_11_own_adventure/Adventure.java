@@ -30,11 +30,12 @@ public static void main(String[] args) {
 	if(Choise2== 1) {
 		Choise3 = JOptionPane.showOptionDialog(null, "The police come. What do you do?", "Adventure Story", 0, JOptionPane.INFORMATION_MESSAGE, null,
 			new String[] { "Run", "Stay put", "Fight them"}, null);
-		if(Choise2== 2) {
-			JOptionPane.showMessageDialog(null, "You win!");
-		}
-		
 	}
+	if(Choise2== 2) {
+		JOptionPane.showMessageDialog(null, "You win!");
+	}
+		
+	
 	if(Choise3 == 0) {
 		JOptionPane.showMessageDialog(null, "You escape. You win!");
 	}
@@ -45,8 +46,9 @@ public static void main(String[] args) {
 		JOptionPane.showMessageDialog(null, "You die. You lose.:(");
 	}	
 	}
+}
 
-	}
+	
 	
 	//int Choise2 = JOptionPane.showOptionDialog(null, "Question", "Adventure Story", 0, JOptionPane.INFORMATION_MESSAGE, null,
 	//		new String[] { "A1", "A2", "A3", "A4"}, null);
